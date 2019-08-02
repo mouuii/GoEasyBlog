@@ -1,0 +1,2 @@
+nohup micro sidecar --handler=proxy --address=0.0.0.0:8081 --namespace=x-team.srv > /tmp/x-team-srv.log 2>&1 &
+nohup micro api --handler=proxy --namespace=x-team.api --address=0.0.0.0:15600 > /tmp/x-team-api.log 2>&1  &
